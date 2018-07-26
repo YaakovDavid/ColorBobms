@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Minesweeper</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <h1>Minesweeper</h1>
+    <!-- username get's appended to this h2 -->
+    <h2></h2>
+
+    <input type="text" placeholder="Player name">
+    <button class="submit">Play</button>
+
+    <button class="game-button" id="button-green">
+      <a href="board1.html" title="board1">Easy </a>
+    </button>
+
+    <button class="game-button" id="button-yellow">
+      <a href="board3.html" title="board3">Medium</a>
+    </button>
+
+    <button class="game-button" id="button-red">
+      <a href="board2.html" title="board2">Hard</a>
+    </button>
+
+    <button class="game-button" id="button-purple">
+      <a href="randomBoard.html" title="randomBoard">Random</a>
+    </button>
+  </main>
+
+  <footer>
+    <h3 id="how-to-play">How to Play</h3>
+
+    <div class="rules">
+
+      <div class="circle-container">
+        <div id="red-circle" class="circle">
+           <span id="center-red-text">BOMB!!!</span>
+        </div>
+      </div>
+
+      <div class="circle-container">
+        <div id="orange-circle" class="circle">
+           <span id="center-orange-text">DANGER!</span>
+        </div>
+      </div>
+
+      <div class="circle-container">
+        <div id="yellow-circle" class="circle">
+          <span id="center-yellow-text">EVEN CLOSER!</span>
+        </div>
+      </div>
+
+      <div class="circle-container">
+        <div id="blue-circle" class="circle">
+          <span id="center-blue-text">CLOSE BY!</span>
+        </div>
+      </div>
+
+      <div class="circle-container">
+        <div id="green-circle" class="circle">
+          <span id="center-green-text">SAFE, NO BOMB!</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

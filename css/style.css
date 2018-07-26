@@ -1,0 +1,225 @@
+body{
+  background-color: black;
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+h1{
+  font-family: 'Roboto Slab', serif;
+  color: rgb(182, 7, 16);
+  font-size: 40px;
+}
+
+h2{
+  font-family: 'Roboto Slab', serif;
+  color: rgb(235, 20, 31);
+}
+
+main{
+  padding: 40px 60px;
+}
+
+input{
+  padding: 5px 8px;
+  margin: 0 0 10px 0;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  border: none;
+  font-size: 15px;
+  color:  rgb(182, 7, 16);
+}
+
+.submit{
+  font-size: 18px;
+  background-color: rgb(182, 7, 16);
+  padding: 5px 10px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 18px;
+}
+
+button{
+  margin: 0 5px;
+  border: none;
+  padding: 6px 9px;
+  border-radius: 3px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+#button-yellow{
+  background-color: rgb(170, 168, 27);
+}
+
+#button-red{
+  background-color: rgb(185, 14, 14);
+}
+
+#button-purple{
+  background-color: purple;
+}
+
+#button-green{
+  background-color: green;
+}
+
+footer{
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.rules{
+  margin-top: 30px auto;
+  display: flex;
+}
+
+#how-to-play{
+  color: white;
+  padding-bottom: 8px;
+  border-bottom: 2px solid white;
+}
+
+.circle-container{
+  width: 100px;
+  height: 100px;
+  margin: 0 10px;
+}
+
+.circle{
+  flex-direction: row;
+  height: 90%;
+  width: 90%;
+  border-radius: 50%;
+  margin: auto;
+  transition: width .3s, height .3s;
+  color:black;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  display: flex;
+}
+
+span{
+  justify-items: center;
+  align-items: center;
+  padding: 20px 30px;
+}
+
+#center-red-text{
+  padding: 30px 20px;
+}
+
+#center-blue-text{
+  padding: 25px 20px;
+}
+
+#center-green-text{
+  padding: 25px 3px;
+}
+
+#center-yellow-text{
+  padding: 27px 3px;
+}
+
+#center-orange-text{
+  padding: 30px 15px;
+}
+
+.circle:hover{
+  width: 100px;
+  height: 100px;
+  font-weight: bold;
+}
+
+#red-circle{
+  background-color: rgb(192, 20, 20);
+}
+
+#orange-circle{
+  background-color: rgb(216, 130, 38);
+}
+
+#yellow-circle{
+  background-color: rgb(252, 248, 12);
+}
+#blue-circle{
+  background-color: rgb(82, 105, 233);
+}
+
+#green-circle{
+  background-color: rgb(5, 182, 5);
+}
+
+@media (max-width: 550px) {
+  body {
+    margin-top: 25px;
+    font-size: 15px;
+  }
+
+  button{
+    margin: 10px 5px;
+  }
+
+  .circle-container{
+    width: 80px;
+    height: 80px;
+    margin: 0 10px;
+  }
+
+  .circle:hover{
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 458px) {
+  h1{
+    margin: 0 auto;
+  }
+
+  button{
+    margin: 3px;
+  }
+
+  .circle-container{
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  #center-red-text{
+    font-size: 10px;
+    padding: 20px 9px;
+  }
+
+  #center-orange-text{
+    padding: 18px 6px;
+    font-size: 10px;
+  }
+
+  #center-yellow-text{
+    padding: 10px 8px;
+    font-size: 10px;
+  }
+
+  #center-blue-text{
+    padding: 15px 12px;
+    font-size: 10px;
+  }
+
+  #center-green-text{
+    padding: 6px 9px;
+    font-size: 10px;
+  }
+
+  .circle:hover{
+    width: 57px;
+    height: 57px;
+  }
+}
+
+
